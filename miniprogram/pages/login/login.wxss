@@ -1,0 +1,28 @@
+.logo {
+  font-size: 48rpx;
+  text-align: center;
+  margin: 100rpx 0 60rpx;
+}
+.input {
+  background: white;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+.register-link {
+  text-align: center;
+  margin-top: 30rpx;
+  color: #4CAF50;
+}
+.preview {
+  width: 100%;
+  background: #fff;
+  border-radius: 16rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.preview canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,13 @@
+<view class="container">
+  <view wx:if="{{loading}}" class="loading">加载中...</view>
+  <view wx:else class="detail">
+    <image src="{{detail.image_url}}" mode="aspectFit" class="result-image"></image>
+    <view class="info">
+      <view class="category">类别：{{detail.category}}</view>
+      <view class="confidence">置信度：{{detail.confidence}}</view>
+      <view class="advice">投放建议：{{detail.disposal_advice}}</view>
+      <view class="time">识别时间：{{detail.created_at}}</view>
+    </view>
+    <button class="btn-feedback" bindtap="goFeedback">提交纠错反馈</button>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+
+<view class="container">
+  <view class="header">欢迎使用垃圾分类助手</view>
+  <view class="quick-actions">
+    <view class="action-btn" bindtap="goRecognize">📷 识别垃圾</view>
+    <view class="action-btn" bindtap="goRules">🔍 查询规则</view>
+    <view class="action-btn" bindtap="goRank">🏆 排行榜</view>
+  </view>
+  <view class="notice-section">
+    <view class="section-title">最新公告</view>
+    <view wx:for="{{notices}}" wx:key="id" class="notice-item" bindtap="goNoticeDetail" data-id="{{item.id}}">
+      <text>{{item.title}}</text>
+      <text class="time">{{item.created_at}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+.container {
+  padding: 40rpx;
+}
+.info {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+}
+.picker-wrapper {
+  margin-bottom: 40rpx;
+}
+.picker-display {
+  border: 1px solid #ccc;
+  border-radius: 8rpx;
+  padding: 20rpx;
+  margin-top: 10rpx;
+  color: #333;
+}
+.submit-btn {
+  background: #4CAF50;
+  color: #fff;
+  border-radius: 40rpx;
+  width: 100%;
+}

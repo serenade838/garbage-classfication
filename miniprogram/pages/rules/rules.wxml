@@ -1,0 +1,24 @@
+<view class="container">
+  <!-- 搜索框 -->
+  <view class="search-bar">
+    <input class="search-input" placeholder="输入垃圾名称或别名" bindinput="onKeywordInput" value="{{keyword}}" />
+    <button class="search-btn" bindtap="searchRules">搜索</button>
+  </view>
+
+  <!-- 结果列表 -->
+  <view class="rule-list" wx:if="{{results.length > 0}}">
+    <view wx:for="{{results}}" wx:key="id" class="rule-item">
+      <view class="rule-name">{{item.name}}</view>
+      <view class="rule-category">分类：{{item.category}}</view>
+      <view class="rule-advice">投放建议：{{item.advice}}</view>
+    </view>
+  </view>
+
+  <!-- 空状态 -->
+  <view wx:elif="{{searched}}" class="empty">
+    <text>未找到相关垃圾，请换个关键词</text>
+  </view>
+  <view wx:else class="empty">
+    <text>输入关键词搜索垃圾分类规则</text>
+  </view>
+</view>

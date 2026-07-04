@@ -1,0 +1,29 @@
+<nav-bar title="历史记录"></nav-bar>
+
+<view class="page">
+  <view class="filter-bar">
+    <input class="filter-input" placeholder="输入类别筛选" bindinput="onCategoryInput" value="{{category}}" />
+    <button class="filter-btn" bindtap="search">搜索</button>
+    <button class="refresh-btn" bindtap="refresh">刷新</button>
+  </view>
+
+  <view class="history-list">
+    <view wx:for="{{list}}" wx:key="id" class="history-item">
+      <image class="thumb" src="{{item.image_url}}" mode="aspectFill" bindtap="previewImage" data-src="{{item.image_url}}"></image>
+      <view class="info">
+        <view class="category">{{item.category || '未识别'}}</view>
+        <view class="confidence">置信度：{{item.confidence || '--'}}</view>
+        <view class="time">{{item.created_at}}</view>
+      </view>
+      <view class="delete-btn" bindtap="deleteRecord" data-id="{{item.id}}">删除</view>
+    </view>
+  </view>
+
+  <view wx:if="{{list.length === 0 && loaded}}" class="empty">暂无历史记录</view>
+
+  <view class="pagination" wx:if="{{totalPages > 1}}">
+    <button class="page-btn" bindtap="prevPage" disabled="{{page <= 1}}">上一页</button>
+    <text class="page-info">{{page}} / {{totalPages}}</text>
+    <button class="page-btn" bindtap="nextPage" disabled="{{page >= totalPages}}">下一页</button>
+  </view>
+</view>

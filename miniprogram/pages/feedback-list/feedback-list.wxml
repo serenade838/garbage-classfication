@@ -1,0 +1,23 @@
+<nav-bar title="我的反馈"></nav-bar>
+
+<view class="container">
+  <view wx:if="{{list.length === 0}}" class="empty">
+    <text>暂无反馈记录</text>
+  </view>
+  <view wx:else class="feedback-list">
+    <view wx:for="{{list}}" wx:key="sample_id" class="feedback-item">
+      <view class="header">
+        <text class="record-id">记录 #{{item.record_id}}</text>
+        <text class="status status-{{item.audit_status}}">
+          {{item.audit_status === 0 ? '待审核' : item.audit_status === 1 ? '已通过' : '已驳回'}}
+        </text>
+      </view>
+      <view class="body">
+        <view class="row">原识别：{{item.original_category || '未知'}}</view>
+        <view class="row">纠正为：{{item.user_correct_category}}</view>
+        <view class="row time">提交时间：{{item.create_time}}</view>
+        <view wx:if="{{item.audit_reason}}" class="row reason">驳回原因：{{item.audit_reason}}</view>
+      </view>
+    </view>
+  </view>
+</view>

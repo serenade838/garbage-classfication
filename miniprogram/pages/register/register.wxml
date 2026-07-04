@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="title">注册</view>
+  <input class="input" placeholder="手机号" bindinput="onPhoneInput" />
+  <input class="input" placeholder="密码（不少于6位）" password bindinput="onPwdInput" />
+  <input class="input" placeholder="楼栋（选填）" bindinput="onBuildingInput" />
+  <button class="btn" bindtap="register">注册</button>
+</view>

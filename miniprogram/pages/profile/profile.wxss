@@ -1,0 +1,172 @@
+/* pages/profile/profile.wxss */
+
+.profile-page {
+  padding: 30rpx;
+  background: #f5f7fa;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* 用户卡片 */
+.user-card {
+  background: linear-gradient(145deg, #4CAF50, #388E3C);
+  border-radius: 24rpx;
+  padding: 40rpx 30rpx;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 8rpx 30rpx rgba(76, 175, 80, 0.3);
+  margin-bottom: 30rpx;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+  font-size: 56rpx;
+  font-weight: bold;
+  text-align: center;
+  line-height: 120rpx;
+  margin-right: 30rpx;
+  flex-shrink: 0;
+}
+
+.user-info {
+  flex: 1;
+  color: #fff;
+}
+
+.nickname-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8rpx;
+}
+
+.nickname {
+  font-size: 40rpx;
+  font-weight: 500;
+  margin-right: 20rpx;
+}
+
+.edit-tag {
+  color: #4CAF50;
+  font-size: 24rpx;
+  padding: 0 10rpx;
+  border: 1px solid #4CAF50;
+  border-radius: 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-left: 10rpx;
+}
+
+.phone {
+  font-size: 28rpx;
+  opacity: 0.9;
+}
+
+/* 统计卡片 */
+.stats-card {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 30rpx 0;
+  display: flex;
+  box-shadow: 0 4rpx 16rpx rgba(0,0,0,0.04);
+  margin-bottom: 30rpx;
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 44rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.stat-label {
+  display: block;
+  font-size: 26rpx;
+  color: #999;
+  margin-top: 6rpx;
+}
+
+.stat-divider {
+  width: 2rpx;
+  background: #e8e8e8;
+}
+
+/* 信息列表 */
+.info-list {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 0 20rpx;
+  margin: 20rpx 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 24rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.label {
+  width: 140rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.value {
+  flex: 1;
+  font-size: 28rpx;
+  color: #222;
+}
+
+/* 操作按钮组：水平居中并排 */
+.action-group {
+  display: flex;
+  justify-content: center;
+  gap: 30rpx;
+  margin-top: 20rpx;
+}
+
+.action-btn {
+  border-radius: 40rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  border: none;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.04);
+  padding: 0 40rpx;
+  flex: 0 1 auto;
+}
+
+.action-btn.primary {
+  background: #4CAF50;
+  color: #fff;
+}
+
+.action-btn.danger {
+  background: #fff;
+  color: #e74c3c;
+  border: 2rpx solid #e74c3c;
+}
+
+.edit-btn {
+  background: transparent;
+  color: #4CAF50;
+  font-size: 24rpx;
+  padding: 0 10rpx;
+  border: 1px solid #4CAF50;
+  border-radius: 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-left: 10rpx;
+}

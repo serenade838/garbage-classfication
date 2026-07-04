@@ -1,0 +1,104 @@
+.page {
+  padding: 20rpx 30rpx;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* 选择器容器 */
+.picker-wrapper {
+  margin-bottom: 30rpx;
+}
+.picker-display {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  padding: 16rpx 30rpx;
+  border-radius: 40rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.06);
+  font-size: 28rpx;
+}
+.picker-label {
+  color: #666;
+}
+.picker-value {
+  color: #333;
+  font-weight: bold;
+  margin: 0 8rpx;
+}
+.picker-arrow {
+  color: #999;
+  font-size: 24rpx;
+  margin-left: 4rpx;
+}
+
+/* 排名列表 */
+.rank-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+/* 每个排名卡片 */
+.rank-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 20rpx 30rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.04);
+}
+
+/* 前三名特殊背景 */
+.rank-item.top1 {
+  background: linear-gradient(135deg, #FFD700, #FFC107);
+  box-shadow: 0 4rpx 16rpx rgba(255,215,0,0.4);
+}
+.rank-item.top2 {
+  background: linear-gradient(135deg, #E0E0E0, #BDBDBD);
+  box-shadow: 0 4rpx 16rpx rgba(192,192,192,0.3);
+}
+.rank-item.top3 {
+  background: linear-gradient(135deg, #D2A679, #BF8F5A);
+  box-shadow: 0 4rpx 16rpx rgba(205,127,50,0.3);
+}
+
+/* 排名序号 */
+.rank-number {
+  width: 80rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+.rank-num {
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #333;
+}
+.rank-item.top1 .rank-number,
+.rank-item.top2 .rank-number,
+.rank-item.top3 .rank-number {
+  color: #fff;
+}
+
+/* 排名信息 */
+.rank-info {
+  flex: 1;
+  margin-left: 20rpx;
+}
+.nickname {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #222;
+}
+.count {
+  font-size: 26rpx;
+  color: #888;
+  margin-top: 4rpx;
+}
+
+/* 空状态 */
+.empty {
+  text-align: center;
+  margin-top: 100rpx;
+  color: #aaa;
+  font-size: 28rpx;
+}

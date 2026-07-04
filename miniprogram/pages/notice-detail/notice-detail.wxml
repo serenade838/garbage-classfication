@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="title">{{detail.title}}</view>
+  <view class="time">{{detail.created_at}}</view>
+  <view class="content">{{detail.content}}</view>
+</view>

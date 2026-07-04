@@ -1,0 +1,5 @@
+<view class="nav-bar" style="padding-top: {{statusBarHeight}}px; background: {{bgColor}};">
+  <view class="nav-content">
+    <text class="nav-title">{{title}}</text>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="logo">♻️ 智能垃圾分类</view>
+  <view class="form">
+    <input class="input" placeholder="手机号" bindinput="onPhoneInput" />
+    <input class="input" placeholder="密码" password bindinput="onPwdInput" />
+    <button class="btn" bindtap="login">登录</button>
+    <view class="register-link" bindtap="goRegister">还没有账号？立即注册</view>
+  </view>
+</view>
+<canvas canvas-id="resultCanvas"
+        style="width:100%; height:auto;"
+        width="{{canvasWidth}}"
+        height="{{canvasHeight}}">
+</canvas>

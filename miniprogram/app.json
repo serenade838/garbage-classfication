@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/register/register",
+    "pages/home/home",
+    "pages/recognize/recognize",
+    "pages/result/result",
+    "pages/rules/rules",
+    "pages/categories/categories",
+    "pages/history/history",
+    "pages/feedback/feedback",
+    "pages/rank/rank",
+    "pages/notice/notice",
+    "pages/notice-detail/notice-detail",
+    "pages/profile/profile",
+    "pages/change-password/change-password",
+    "pages/feedback-list/feedback-list"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_active.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史",
+        "iconPath": "images/history.png",
+        "selectedIconPath": "images/history_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile_active.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarTitleText": "智能垃圾分类",
+    "navigationBarBackgroundColor": "#4CAF50",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

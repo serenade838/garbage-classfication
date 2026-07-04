@@ -1,0 +1,39 @@
+.header {
+  font-size: 40rpx;
+  margin: 30rpx 0;
+}
+.quick-actions {
+  display: flex;
+  justify-content: space-around;
+  margin: 30rpx 0;
+}
+.action-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 30rpx 20rpx;
+  border-radius: 20rpx;
+  width: 200rpx;
+  text-align: center;
+}
+.notice-section {
+  margin-top: 40rpx;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 36rpx;
+  margin-bottom: 20rpx;
+}
+.notice-item {
+  background: white;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin-bottom: 16rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.time {
+  color: #999;
+  font-size: 24rpx;
+}
+
+

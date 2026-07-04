@@ -1,0 +1,28 @@
+<view class="container">
+  <!-- 图片预览区域：叠加 image 和 canvas -->
+  <view class="preview-wrapper">
+    <!-- 底层：原图 -->
+    <image wx:if="{{imageUrl}}" class="preview-image" src="{{imageUrl}}" mode="aspectFit"></image>
+    <!-- 上层：画框的 canvas（透明背景，只画框和文字） -->
+    <canvas class="preview-canvas" canvas-id="resultCanvas"
+            style="width:100%; height:100%; position:absolute; top:0; left:0;"></canvas>
+  </view>
+
+  <view class="actions">
+    <button bindtap="chooseImage">📁 相册</button>
+    <button bindtap="takePhoto">📷 拍照</button>
+  </view>
+  <button class="btn-recognize" bindtap="startRecognize" disabled="{{!imageUrl}}">开始识别</button>
+
+  <!-- 识别结果 -->
+  <view class="result" wx:if="{{result}}">
+    <view class="result-title">识别结果</view>
+    <view wx:for="{{result.all_results}}" wx:key="index" class="result-item">
+      <view class="category">🗑️ 类别：{{item.category}}</view>
+      <view class="confidence">🎯 置信度：{{item.confidence}}</view>
+      <view class="advice">💡 投放建议：{{item.disposal_advice}}</view>
+      <view class="tips">📌 注意事项：{{item.tips}}</view>
+    </view>
+    <button class="btn-feedback" bindtap="goFeedback" data-record="{{result.record_id}}">提交纠错反馈</button>
+  </view>
+</view>

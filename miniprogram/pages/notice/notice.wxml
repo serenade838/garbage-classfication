@@ -1,0 +1,7 @@
+<view class="container">
+  <view wx:for="{{notices}}" wx:key="id" class="notice-item" bindtap="goDetail" data-id="{{item.id}}">
+    <view class="title">{{item.title}}</view>
+    <view class="summary">{{item.summary}}</view>
+    <view class="time">{{item.created_at}}</view>
+  </view>
+</view>

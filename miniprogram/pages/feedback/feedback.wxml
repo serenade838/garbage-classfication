@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="info">识别记录 ID：{{recordId}}</view>
+  <view class="picker-wrapper">
+    <text>请选择您认为正确的分类：</text>
+    <picker mode="selector" range="{{categories}}" bindchange="onCategoryChange">
+      <view class="picker-display">
+        {{selectedCategory || '请选择'}}
+      </view>
+    </picker>
+  </view>
+  <button class="submit-btn" bindtap="submitFeedback">提交反馈</button>
+</view>
